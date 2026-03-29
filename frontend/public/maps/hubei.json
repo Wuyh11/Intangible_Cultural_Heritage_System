@@ -1,0 +1,90 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "name": "武汉市" },
+      "geometry": { "type": "Polygon", "coordinates": [[[114.10,30.42],[114.55,30.42],[114.55,30.76],[114.10,30.76],[114.10,30.42]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "黄石市" },
+      "geometry": { "type": "Polygon", "coordinates": [[[114.82,30.02],[115.26,30.02],[115.26,30.34],[114.82,30.34],[114.82,30.02]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "十堰市" },
+      "geometry": { "type": "Polygon", "coordinates": [[[110.42,32.36],[111.10,32.36],[111.10,32.90],[110.42,32.90],[110.42,32.36]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "宜昌市" },
+      "geometry": { "type": "Polygon", "coordinates": [[[111.00,30.42],[111.58,30.42],[111.58,30.94],[111.00,30.94],[111.00,30.42]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "襄阳市" },
+      "geometry": { "type": "Polygon", "coordinates": [[[111.74,31.78],[112.52,31.78],[112.52,32.30],[111.74,32.30],[111.74,31.78]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "鄂州市" },
+      "geometry": { "type": "Polygon", "coordinates": [[[114.67,30.20],[115.05,30.20],[115.05,30.56],[114.67,30.56],[114.67,30.20]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "荆门市" },
+      "geometry": { "type": "Polygon", "coordinates": [[[111.86,30.76],[112.52,30.76],[112.52,31.28],[111.86,31.28],[111.86,30.76]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "孝感市" },
+      "geometry": { "type": "Polygon", "coordinates": [[[113.58,30.68],[114.24,30.68],[114.24,31.12],[113.58,31.12],[113.58,30.68]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "荆州市" },
+      "geometry": { "type": "Polygon", "coordinates": [[[111.94,30.02],[112.56,30.02],[112.56,30.58],[111.94,30.58],[111.94,30.02]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "黄冈市" },
+      "geometry": { "type": "Polygon", "coordinates": [[[114.46,30.12],[115.24,30.12],[115.24,30.72],[114.46,30.72],[114.46,30.12]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "咸宁市" },
+      "geometry": { "type": "Polygon", "coordinates": [[[114.00,29.58],[114.62,29.58],[114.62,30.10],[114.00,30.10],[114.00,29.58]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "随州市" },
+      "geometry": { "type": "Polygon", "coordinates": [[[113.00,31.42],[113.74,31.42],[113.74,31.94],[113.00,31.94],[113.00,31.42]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "恩施土家族苗族自治州" },
+      "geometry": { "type": "Polygon", "coordinates": [[[109.00,29.94],[109.92,29.94],[109.92,30.62],[109.00,30.62],[109.00,29.94]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "仙桃市" },
+      "geometry": { "type": "Polygon", "coordinates": [[[113.16,30.18],[113.74,30.18],[113.74,30.54],[113.16,30.54],[113.16,30.18]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "潜江市" },
+      "geometry": { "type": "Polygon", "coordinates": [[[112.60,30.18],[113.18,30.18],[113.18,30.62],[112.60,30.62],[112.60,30.18]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "天门市" },
+      "geometry": { "type": "Polygon", "coordinates": [[[112.86,30.42],[113.46,30.42],[113.46,30.88],[112.86,30.88],[112.86,30.42]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "神农架林区" },
+      "geometry": { "type": "Polygon", "coordinates": [[[110.30,31.42],[111.04,31.42],[111.04,32.02],[110.30,32.02],[110.30,31.42]]] }
+    }
+  ]
+}

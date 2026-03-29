@@ -1,0 +1,9 @@
+<svg width="800" height="480" viewBox="0 0 800 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="480" rx="32" fill="#F2E4D0"/>
+  <path d="M0 108C103.333 76 206.667 76 310 108C413.333 140 516.667 140 620 108C723.333 76 800 60 800 60V480H0V108Z" fill="#D9B483"/>
+  <path d="M0 180C103.333 148 206.667 148 310 180C413.333 212 516.667 212 620 180C723.333 148 800 132 800 132V480H0V180Z" fill="#C88245"/>
+  <path d="M0 272C103.333 240 206.667 240 310 272C413.333 304 516.667 304 620 272C723.333 240 800 224 800 224V480H0V272Z" fill="#7A3017"/>
+  <circle cx="650" cy="120" r="54" fill="#F9F0E4"/>
+  <text x="68" y="168" fill="#7A3017" font-size="44" font-family="serif">湖北省非遗示意图</text>
+  <text x="68" y="226" fill="#8B5A3D" font-size="26" font-family="serif">Hubei Intangible Cultural Heritage</text>
+</svg>

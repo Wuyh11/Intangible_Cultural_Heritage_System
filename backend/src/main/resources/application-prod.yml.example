@@ -1,0 +1,23 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:mysql://mysql-host:3306/hubei_ich?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+    username: hubei_ich
+    password: strong_password
+  data:
+    redis:
+      host: redis-host
+      port: 6379
+      database: 2
+      password: redis_password
+
+security:
+  jwt:
+    secret: 5j9G2xC6nQ8mL1bW4vT7uY3rE0pK9dS2aF6hJ8lN5qR3tV1w
+    expiration: 86400000
+
+storage:
+  upload-dir: /data/hubei-ich/uploads
+  access-prefix: /uploads/
