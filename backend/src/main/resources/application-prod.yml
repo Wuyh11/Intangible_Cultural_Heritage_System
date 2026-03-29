@@ -1,0 +1,23 @@
+server:
+  port: ${SERVER_PORT:8080}
+
+spring:
+  datasource:
+    url: ${MYSQL_URL:jdbc:mysql://mysql:3306/hubei_ich?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true&useSSL=false}
+    username: ${MYSQL_USER:root}
+    password: ${MYSQL_PASSWORD:Root@123456}
+  data:
+    redis:
+      host: ${REDIS_HOST:redis}
+      port: ${REDIS_PORT:6379}
+      password: ${REDIS_PASSWORD:Redis@123456}
+      database: ${REDIS_DATABASE:2}
+
+security:
+  jwt:
+    secret: ${JWT_SECRET:hubei-ich-jwt-secret-2026-production-please-change-immediately}
+    expiration: ${JWT_EXPIRATION:86400000}
+
+storage:
+  upload-dir: ${STORAGE_UPLOAD_DIR:/data/uploads}
+  access-prefix: ${STORAGE_ACCESS_PREFIX:/uploads/}

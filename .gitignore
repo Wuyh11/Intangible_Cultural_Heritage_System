@@ -2,6 +2,8 @@ backend/target/
 frontend/node_modules/
 frontend/dist/
 backend/uploads/
+deploy/.env.server
+.env
 *.iml
 .idea/
 .DS_Store

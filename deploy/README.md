@@ -1,14 +1,13 @@
 # 服务器部署说明
 
-本目录用于后续拿到 SSH 后完成服务器部署与联调。当前阶段先提供部署约定和文件组织建议。
+本目录用于服务器部署与联调说明。当前仓库已经补充了根目录 `docker-compose.yml`，可直接在服务器上通过 Docker Compose 拉起整套系统。
 
 ## 推荐目录
 
-- 应用根目录：`/data/hubei-ich`
-- 后端 jar：`/data/hubei-ich/backend/app.jar`
-- 前端静态文件：`/data/hubei-ich/frontend/dist`
-- 上传目录：`/data/hubei-ich/uploads`
-- 日志目录：`/data/hubei-ich/logs`
+- 应用根目录：`/opt/hubei-ich/Intangible_Cultural_Heritage_System`
+- MySQL 数据卷：Docker named volume `mysql_data`
+- Redis 数据卷：Docker named volume `redis_data`
+- 上传目录：Docker named volume `backend_uploads`
 
 ## 运行环境建议
 
@@ -19,26 +18,25 @@
 
 ## 启动顺序
 
-1. 导入 `sql/schema.sql`
-2. 导入 `sql/data.sql`
-3. 配置 Redis
-4. 填写后端生产配置
-5. 构建前后端产物
-6. 先启动后端，再由 Nginx 提供前端静态资源并反向代理 API
+1. 从 GitHub 拉取仓库
+2. 复制 `deploy/.env.server.example` 为 `.env`
+3. 修改数据库密码、Redis 密码和 JWT 密钥
+4. 执行 `docker compose up -d --build`
+5. 通过 `docker compose ps` 和 `docker compose logs` 检查服务状态
 
-## Nginx 约定
+## 访问约定
 
-- `/` 指向前端静态目录
-- `/api/` 反向代理到后端 `127.0.0.1:8080`
-- `/uploads/` 指向文件上传目录
+- 前端入口：`http://服务器IP/`
+- 后端 API：`http://服务器IP/api/`
+- Swagger：`http://服务器IP/api/` 通过 Nginx 反代到后端，或容器内访问 `http://backend:8080/swagger-ui.html`
+- 上传资源：`http://服务器IP/uploads/...`
 
-## 生产配置重点
+## Compose 服务
 
-- `spring.datasource.*`
-- `spring.data.redis.*`
-- `security.jwt.secret`
-- `storage.upload-dir`
-- `server.port`
+- `mysql`：自动导入 `sql/schema.sql` 和 `sql/data.sql`
+- `redis`：启用密码和持久化
+- `backend`：基于 Spring Boot 生产配置启动
+- `frontend`：构建 Vue 静态站点并由 Nginx 提供服务
 
 ## 备注
 
